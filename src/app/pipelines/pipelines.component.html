@@ -1,6 +1,9 @@
-<p *ngFor="let pipeline of pipelines">
-  <span>{{pipeline.id}}</span>
-  <span>{{pipeline.sha}}</span>
-  <span>{{pipeline.ref}}</span>
-  <span>{{pipeline.status}}</span>
-</p>
+<h1>Pipelines</h1>
+
+<div *ngFor="let pipeline of pipelines">
+    <div>#{{pipeline.id}}</div>
+    <div>{{pipeline.ref}}</div>
+    <div>{{pipeline.status}}</div>
+    <div>{{pipeline.sha}}</div>
+    <p></p>
+</div>

@@ -9,7 +9,9 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class GitlabService {
 
 private gitlabUrl = 'http://localhost:12300';
-private pipelineUrl = this.gitlabUrl;
+private gitlabProjectId = 42;
+private gitlabProjectUrl = this.gitlabUrl + '/api/v4/projects/' + this.gitlabProjectId;
+private pipelineUrl = this.gitlabProjectUrl + '/pipelines/index.json';
 
   constructor(
     private http: HttpClient
