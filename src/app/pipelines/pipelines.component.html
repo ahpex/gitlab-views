@@ -1,5 +1,6 @@
-<ul>
-  <li *ngFor="let pipeline of pipelines">
-      <span>{{pipeline.id}}</span> {{pipeline.ref}}
-  </li>
-</ul>
+<p *ngFor="let pipeline of pipelines">
+  <span>{{pipeline.id}}</span>
+  <span>{{pipeline.sha}}</span>
+  <span>{{pipeline.ref}}</span>
+  <span>{{pipeline.status}}</span>
+</p>

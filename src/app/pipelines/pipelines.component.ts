@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Pipeline } from '../pipeline';
 import { GitlabService } from '../gitlab.service';
-import { pipeDef } from '@angular/core/src/view/provider';
 
 @Component({
   selector: 'app-pipelines',
