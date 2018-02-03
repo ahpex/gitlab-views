@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Pipeline } from '../pipeline';
+import { Pipeline } from '../models/pipeline';
 import { GitlabService } from '../gitlab.service';
 
 @Component({

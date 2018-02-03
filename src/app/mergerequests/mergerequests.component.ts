@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MergeRequest } from '../mergerequest';
+import { MergeRequest } from '../models/mergerequest';
 import { GitlabService } from '../gitlab.service';
 
 @Component({
