@@ -1,9 +1,7 @@
 <h1>Merge Requests</h1>
 
-<a routerLink="/dashboard">Dashboard</a>
-
 <div *ngFor="let mergeRequest of mergeRequests">
-    <div>#{{mergeRequest.id}}</div>
+    <div><a href="{{mergeRequest.web_url}}">#{{mergeRequest.id}}</a></div>
     <div>{{mergeRequest.source_branch}}</div>
     <div>{{mergeRequest.target_branch}}</div>
     <div>{{mergeRequest.project_id}}</div>
