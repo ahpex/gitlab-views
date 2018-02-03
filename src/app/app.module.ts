@@ -6,16 +6,20 @@ import { AppComponent } from './app.component';
 import { PipelinesComponent } from './pipelines/pipelines.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GitlabService } from './gitlab.service';
+import { AppRoutingModule } from './/app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PipelinesComponent
+    PipelinesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [
     GitlabService
