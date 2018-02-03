@@ -4,16 +4,17 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { PipelinesComponent } from './pipelines/pipelines.component';
+import { MergerequestsComponent } from './mergerequests/mergerequests.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GitlabService } from './gitlab.service';
-import { AppRoutingModule } from './/app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
-
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     PipelinesComponent,
+    MergerequestsComponent,
     DashboardComponent
   ],
   imports: [
