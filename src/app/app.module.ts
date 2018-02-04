@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { GitlabService } from './gitlab.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClient } from '@angular/common/http/src/client';
 
 @NgModule({
   declarations: [

@@ -1,6 +1,7 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { async, ComponentFixture, TestBed, inject } from '@angular/core/testing';
+import { GitlabService } from '../gitlab.service';
 import { MergerequestsComponent } from './mergerequests.component';
+import { HttpClient, HttpHandler } from '@angular/common/http';
 
 describe('MergerequestsComponent', () => {
   let component: MergerequestsComponent;
@@ -8,7 +9,8 @@ describe('MergerequestsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MergerequestsComponent ]
+      declarations: [ MergerequestsComponent ],
+      providers: [ GitlabService, HttpHandler, HttpClient ]
     })
     .compileComponents();
   }));
@@ -19,7 +21,7 @@ describe('MergerequestsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create', inject([GitlabService, HttpHandler, HttpClient], () => {
     expect(component).toBeTruthy();
-  });
+  }));
 });

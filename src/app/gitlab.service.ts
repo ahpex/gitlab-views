@@ -9,11 +9,11 @@ import { MergeRequest } from './models/mergerequest';
 @Injectable()
 export class GitlabService {
 
-private gitlabUrl = 'http://localhost:12300';
-private gitlabProjectId = 42;
-private gitlabProjectUrl = this.gitlabUrl + '/api/v4/projects/' + this.gitlabProjectId;
-private pipelineUrl = this.gitlabProjectUrl + '/pipelines/index.json';
-private mergerequestUrl = this.gitlabProjectUrl + '/merge_requests/index.json';
+  private gitlabUrl = 'http://localhost:12300';
+  private gitlabProjectId = 42;
+  private gitlabProjectUrl = this.gitlabUrl + '/api/v4/projects/' + this.gitlabProjectId;
+  private pipelineUrl = this.gitlabProjectUrl + '/pipelines/index.json';
+  private mergerequestUrl = this.gitlabProjectUrl + '/merge_requests/index.json';
 
   constructor(
     private http: HttpClient
